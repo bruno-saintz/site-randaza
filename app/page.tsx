@@ -13,6 +13,7 @@ const services = [
   { number: '02', title: 'Retrofit e recuperação de fachadas', text: 'Requalificação de fachadas com atenção à patologia, estanqueidade, estética, segurança e valor do ativo.', image: '/images/retrofit-fachada-hd.jpg' },
   { number: '03', title: 'Laudos técnicos', text: 'Laudos, pareceres e registros para orientar decisões, planejar intervenções e documentar responsabilidades.', image: '/images/reforco-estrutura.jpg' },
   { number: '04', title: 'Construções e reformas', text: 'Obras novas, adequações, áreas externas e acabamentos com coordenação técnica de cada etapa.', image: '/images/construcoes-reformas-escavadeira.png' },
+  { number: '05', title: 'Injeção química em concreto', text: 'Executamos injeção química para tratamento de fissuras no concreto, com procedimento padronizado, controle técnico e excelência em cada etapa.', image: '/images/injecao-quimica-concreto.jpeg' },
 ];
 
 const method = [
