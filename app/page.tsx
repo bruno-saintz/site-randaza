@@ -187,7 +187,7 @@ export default function Home() {
         <div className="section-shell footer-bottom"><span>© Randaza Engenharia Estrutural LTDA</span><a href="#inicio">Voltar ao topo ↑</a></div>
       </footer>
 
-      <a className="whatsapp-float" href="https://wa.me/5511973431618" target="_blank" rel="noreferrer" aria-label="Conversar com a Randaza pelo WhatsApp"><span>WhatsApp</span><b>Fale conosco</b></a>
+      <a className="whatsapp-float" href="https://wa.me/5511973431618" target="_blank" rel="noreferrer" aria-label="Conversar com a Randaza pelo WhatsApp"><b>Fale conosco</b><Image src="/images/whatsapp-logo.png" alt="" width={28} height={28} /></a>
     </main>
   );
 }
