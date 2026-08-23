@@ -70,8 +70,8 @@ export function BeforeAfter() {
   const [position, setPosition] = useState(52);
   return (
     <div className="before-after" style={{ '--split': `${position}%` } as React.CSSProperties}>
-      <Image src="/images/fachada-depois-01.jpg" alt="Fachada renovada após retrofit" fill sizes="(max-width: 900px) 100vw, 55vw" />
-      <div className="before-layer"><Image src="/images/fachada-antes-01.jpg" alt="Fachada antes do retrofit, com manchas e desgaste" fill sizes="(max-width: 900px) 100vw, 55vw" /></div>
+      <Image src="/images/fachada-depois-original.png" alt="Fachada renovada após retrofit" fill sizes="(max-width: 680px) 100vw, (max-width: 980px) 40vw, 430px" />
+      <div className="before-layer"><Image src="/images/fachada-antes-original.png" alt="Fachada antes do retrofit, com manchas e desgaste" fill sizes="(max-width: 680px) 100vw, (max-width: 980px) 40vw, 430px" /></div>
       <span className="compare-label before-label">Antes</span><span className="compare-label after-label">Depois</span>
       <div className="compare-line" aria-hidden="true"><i>↔</i></div>
       <label className="sr-only" htmlFor="comparison">Comparar fachada antes e depois</label>
