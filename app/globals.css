@@ -164,7 +164,7 @@ section { scroll-margin-top:88px; }
 .differential-mark { display:flex; align-items:flex-start; justify-content:space-between; color:var(--gold); }
 .differential-mark svg { width:44px; height:44px; stroke-width:1.25; }
 .differential-mark span { padding-top:4px; }
-.differentials-grid h3 { min-height:2.2em; margin:42px 0 18px; font:400 clamp(23px,2vw,32px)/1.1 Georgia,serif; }.differentials-grid p { margin:0; color:rgba(255,255,255,.58); font-size:13px; line-height:1.65; }
+.differentials-grid h3 { min-height:2.2em; margin:42px 0 18px; font:400 clamp(23px,2vw,32px)/1.1 Georgia,serif; }.differentials-grid p { margin:0; color:rgba(255,255,255,.58); font-size:13px; line-height:1.65; }.differentials-grid p strong { display:block; margin-bottom:10px; color:rgba(255,255,255,.84); font-weight:600; }
 
 .history { display:grid; grid-template-columns:1fr 1fr; gap:clamp(50px,8vw,130px); align-items:center; padding-top:clamp(100px,13vw,190px); padding-bottom:clamp(100px,13vw,190px); }
 .history-image { position:relative; min-height:720px; }.history-image::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(8,31,53,.32),transparent 45%); }.history-image img { object-fit:cover; object-position:center 52%; }
