@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr/ArrowUpRight';
 import { Broom } from '@phosphor-icons/react/dist/ssr/Broom';
 import { ChatCircleText } from '@phosphor-icons/react/dist/ssr/ChatCircleText';
 import { HardHat } from '@phosphor-icons/react/dist/ssr/HardHat';
@@ -181,7 +182,7 @@ export default function Home() {
         <div className="section-shell footer-grid">
           <div><Image src="/images/logo-randaza-hd.png" alt="Randaza Engenharia" width={1514} height={1039} unoptimized /><p>A estrutura segura para sua obra</p></div>
           <div><small>CONTATO</small><a href="tel:+5511973431618">(11) 97343-1618</a><a href="mailto:luizpalman@randazaengenharia.com.br">luizpalman@randazaengenharia.com.br</a></div>
-          <div><small>ENDEREÇO</small><p>Av. Paulista, 1636 · Sala 1105<br />São Paulo / SP</p></div>
+          <div><small>ENDEREÇO</small><p>Av. Paulista, 1636 · Sala 1105<br />São Paulo / SP</p><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Av.%20Paulista%2C%201636%2C%20Sala%201105%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener noreferrer" aria-label="Ver endereço no Google Maps (abre em nova aba)">Ver no mapa <ArrowUpRight aria-hidden="true" /></a></div>
         </div>
         <div className="section-shell footer-bottom"><span>© Randaza Engenharia Estrutural LTDA</span><a href="#inicio">Voltar ao topo ↑</a></div>
       </footer>
