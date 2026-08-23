@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.randazaengenharia.com.br'),
   title: 'Randaza Engenharia Estrutural',
   description: 'Engenharia estrutural, recuperação, laudos técnicos, retrofit de fachadas e construções em São Paulo.',
+  icons: {
+    icon: [{ url: '/images/logo-randaza-original.png?v=2', type: 'image/png' }],
+    shortcut: ['/images/logo-randaza-original.png?v=2'],
+    apple: [{ url: '/images/logo-randaza-original.png?v=2', type: 'image/png' }],
+  },
   openGraph: {
     title: 'Randaza Engenharia Estrutural',
     description: 'Estruturas confiáveis começam por decisões claras.',
