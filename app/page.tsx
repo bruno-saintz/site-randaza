@@ -142,7 +142,7 @@ export default function Home() {
             <article data-reveal><div className="differential-mark"><Monitor aria-hidden="true" /><span>03</span></div><h3>Sistema próprio</h3><p>Acompanhamento centralizado para dar visibilidade à evolução dos serviços.</p></article>
             <article data-reveal><div className="differential-mark"><Broom aria-hidden="true" /><span>04</span></div><h3>Acabamento e limpeza</h3><p>Padrão compatível com ambientes corporativos, condomínios e residências de alto padrão.</p></article>
             <article data-reveal><div className="differential-mark"><SealCheck aria-hidden="true" /><span>05</span></div><h3>Responsabilidade formal</h3><p>Empresa técnica e especialista, com documentação, registro fotográfico e ART quando aplicável.</p></article>
-            <article data-reveal><div className="differential-mark"><ShieldCheck aria-hidden="true" /><span>06</span></div><h3>Garantia</h3><p>Garantia dos serviços executados, com suporte técnico, documentação e compromisso com a solução entregue.</p></article>
+            <article data-reveal><div className="differential-mark"><ShieldCheck aria-hidden="true" /><span>06</span></div><h3>Garantia</h3><p>Obras com ART, garantia dos serviços e acompanhamento direto de engenheiro — segurança e tranquilidade do início ao fim.</p></article>
           </div>
         </div>
       </section>
