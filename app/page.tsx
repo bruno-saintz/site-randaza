@@ -10,10 +10,10 @@ import { BeforeAfter, MotionEnhancer, SiteHeader } from './components';
 
 const services = [
   { number: '01', title: 'Recuperação estrutural com fibra de carbono', text: 'Intervenções em vigas, pilares, lajes e elementos de concreto, do diagnóstico ao reforço localizado.', image: '/images/reforco-fibra-carbono.jpg' },
-  { number: '02', title: 'Retrofit e recuperação de fachadas', text: 'Requalificação de fachadas com atenção à patologia, estanqueidade, estética, segurança e valor do ativo.', image: '/images/retrofit-fachada-hd.jpg' },
+  { number: '02', title: 'Retrofit e recuperação de fachadas', text: 'Requalificação de fachadas com atenção à patologia, estanqueidade, estética, segurança e valor do ativo.', image: '/images/retrofit-fachada-hd.jpg', focus: 'center 42%' },
   { number: '03', title: 'Laudos técnicos', text: 'Laudos, pareceres e registros para orientar decisões, planejar intervenções e documentar responsabilidades.', image: '/images/reforco-estrutura.jpg' },
   { number: '04', title: 'Construções e reformas', text: 'Obras novas, adequações, áreas externas e acabamentos com coordenação técnica de cada etapa.', image: '/images/construcoes-reformas-escavadeira.png' },
-  { number: '05', title: 'Injeção química em concreto', text: 'Executamos injeção química para tratamento de fissuras no concreto, com procedimento padronizado, controle técnico e excelência em cada etapa.', image: '/images/injecao-quimica-concreto.jpeg' },
+  { number: '05', title: 'Injeção química em concreto', text: 'Executamos injeção química para tratamento de fissuras no concreto, com procedimento padronizado, controle técnico e excelência em cada etapa.', image: '/images/injecao-quimica-concreto.jpeg', focus: 'center 18%' },
 ];
 
 const method = [
@@ -73,7 +73,7 @@ export default function Home() {
             <article className="service-row" key={service.number} data-reveal>
               <span className="service-number">{service.number}</span>
               <div><h3>{service.title}</h3><p>{service.text}</p></div>
-              <div className="service-image"><Image src={service.image} alt="" fill sizes="(max-width: 800px) 100vw, 30vw" /></div>
+              <div className="service-image"><Image src={service.image} alt="" fill sizes="(max-width: 680px) 100vw, (max-width: 980px) 34vw, 460px" style={{ objectPosition: service.focus ?? 'center' }} /></div>
               <span className="service-arrow" aria-hidden="true">↗</span>
             </article>
           ))}
