@@ -84,7 +84,6 @@ export default function Home() {
         <div className="section-index" data-reveal><span>02</span><i /></div>
         <div className="projects-head" data-reveal>
           <div><p className="eyebrow dark">Projetos e campo executivo</p><h2 id="projects-title">Competência explicada por aquilo que entregamos.</h2></div>
-          <p>Uma seleção de registros reais de recuperação, retrofit, impermeabilização e construção. No site final, cada caso poderá receber contexto completo de desafio, solução e resultado.</p>
         </div>
 
         <article className="feature-project" data-reveal>
