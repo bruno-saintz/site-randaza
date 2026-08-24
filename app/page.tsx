@@ -160,7 +160,7 @@ export default function Home() {
       </section>
 
       <section className="insights section-shell" aria-labelledby="insights-title">
-        <div className="insights-head" data-reveal><div><p className="eyebrow dark">Conhecimento em movimento</p><h2 id="insights-title">Conteúdo para decisões melhores.</h2></div><span>Área editorial preparada para o site final</span></div>
+        <div className="insights-head" data-reveal><div><p className="eyebrow dark">Conhecimento em movimento</p><h2 id="insights-title">Conteúdo para decisões melhores.</h2></div></div>
         <div className="insights-grid">
           <article data-reveal><span>Patologias estruturais</span><h3>Quando uma fissura exige avaliação técnica?</h3><p>Os sinais que ajudam síndicos e gestores a separar manutenção de um possível risco estrutural.</p></article>
           <article data-reveal><span>Fachadas</span><h3>Infiltração, acabamento e segurança: por onde começar?</h3><p>Como organizar o diagnóstico antes de definir materiais, acesso e cronograma.</p></article>
