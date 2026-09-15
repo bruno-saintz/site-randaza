@@ -6,7 +6,7 @@ import { HardHat } from '@phosphor-icons/react/dist/ssr/HardHat';
 import { Monitor } from '@phosphor-icons/react/dist/ssr/Monitor';
 import { SealCheck } from '@phosphor-icons/react/dist/ssr/SealCheck';
 import { ShieldCheck } from '@phosphor-icons/react/dist/ssr/ShieldCheck';
-import { BeforeAfter, MotionEnhancer, SiteHeader } from './components';
+import { BeforeAfter, MotionEnhancer, ProjectAlbums, SiteHeader } from './components';
 
 const services = [
   { number: '01', title: 'Recuperação estrutural com fibra de carbono', text: 'Intervenções em vigas, pilares, lajes e elementos de concreto, do diagnóstico ao reforço localizado.', image: '/images/reforco-fibra-carbono.jpg' },
@@ -101,6 +101,8 @@ export default function Home() {
           <article data-reveal><div className="project-image"><Image src="/images/concretagem-rampa.jpg" alt="Equipe executando concretagem de rampa" fill sizes="(max-width: 800px) 100vw, 33vw" /></div><p>Construções e áreas externas</p><h3>Preparo de base e concretagem coordenada</h3></article>
           <article data-reveal><div className="project-image"><Image src="/images/impermeabilizacao-cisterna.png" alt="Impermeabilização verde aplicada no interior de uma cisterna" fill sizes="(max-width: 800px) 100vw, 33vw" /></div><p>Impermeabilização</p><h3>Impermeabilização de cisterna</h3></article>
         </div>
+
+        <ProjectAlbums />
       </section>
 
       <section className="transparency" aria-labelledby="transparency-title">
