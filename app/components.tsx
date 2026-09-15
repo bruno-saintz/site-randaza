@@ -278,9 +278,8 @@ export function ProjectAlbums() {
   return (
     <section className="project-albums" aria-labelledby="project-albums-title">
       <div className="project-albums-head" data-reveal>
-        <p className="eyebrow dark">Novos registros de obra</p>
+        <p className="eyebrow dark">Confira nosso portfólio</p>
         <h3 id="project-albums-title">Projetos vistos por inteiro.</h3>
-        <p>Abra os álbuns para acompanhar etapas, métodos executivos e resultados em campo.</p>
       </div>
 
       <div className="album-grid">
