@@ -6,7 +6,7 @@ import { HardHat } from '@phosphor-icons/react/dist/ssr/HardHat';
 import { Monitor } from '@phosphor-icons/react/dist/ssr/Monitor';
 import { SealCheck } from '@phosphor-icons/react/dist/ssr/SealCheck';
 import { ShieldCheck } from '@phosphor-icons/react/dist/ssr/ShieldCheck';
-import { BeforeAfter, MotionEnhancer, ProjectAlbums, SiteHeader } from './components';
+import { BeforeAfter, MotionEnhancer, ProjectAlbums, QuoteForm, SiteHeader } from './components';
 
 const services = [
   { number: '01', title: 'Recuperação estrutural com fibra de carbono', text: 'Intervenções em vigas, pilares, lajes e elementos de concreto, do diagnóstico ao reforço localizado.', image: '/images/reforco-fibra-carbono.jpg' },
@@ -173,10 +173,13 @@ export default function Home() {
       <section className="contact" id="contato" aria-labelledby="contact-title">
         <Image src="/images/contato-area-externa-hd.jpg" alt="Área externa com deck e espaço de convivência executados pela Randaza" fill sizes="100vw" />
         <div className="contact-overlay" />
-        <div className="section-shell contact-content" data-reveal>
-          <p className="eyebrow">Vamos conversar</p><h2 id="contact-title">Conte o desafio estrutural do seu projeto.</h2>
-          <p>Fale diretamente com Luiz Carlos, Diretor Executivo e Engenheiro Civil.</p>
-          <a className="button button-gold" href="https://wa.me/5511973431618" target="_blank" rel="noreferrer">Iniciar conversa no WhatsApp ↗</a>
+        <div className="section-shell contact-content">
+          <div className="contact-copy" data-reveal>
+            <p className="eyebrow">Vamos conversar</p><h2 id="contact-title">Conte o desafio estrutural do seu projeto.</h2>
+            <p>Preencha os dados ao lado para iniciar o atendimento diretamente com a Randaza.</p>
+            <a className="contact-direct" href="https://wa.me/5511973431618" target="_blank" rel="noreferrer">Prefere conversar agora? Acesse o WhatsApp ↗</a>
+          </div>
+          <div data-reveal><QuoteForm /></div>
         </div>
       </section>
 

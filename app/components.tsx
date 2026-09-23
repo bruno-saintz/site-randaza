@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Images, X } from '@phosphor-icons/react';
-import { useEffect, useRef, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 
 const projectAlbums = [
   {
@@ -143,6 +143,96 @@ const projectAlbums = [
     ],
   },
 ];
+
+function formatBrazilianPhone(value: string) {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length <= 2) return digits ? `(${digits}` : '';
+  if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+}
+
+export function QuoteForm() {
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const text = [
+      'Olá, gostaria de solicitar um orçamento com a Randaza.',
+      '',
+      `Nome: ${name.trim()}`,
+      `Contato: ${phone}`,
+      `Mensagem: ${message.trim()}`,
+    ].join('\n');
+
+    setStatus('Abrindo sua solicitação no WhatsApp...');
+    window.open(`https://wa.me/5511973431618?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    window.location.assign('/obrigado-orcamento');
+  };
+
+  return (
+    <form className="quote-form" onSubmit={handleSubmit} aria-labelledby="quote-form-title">
+      <div className="quote-form-head">
+        <p>Solicite uma avaliação</p>
+        <h3 id="quote-form-title">Conte brevemente o que você precisa.</h3>
+      </div>
+
+      <div className="quote-field">
+        <label htmlFor="quote-name">Nome</label>
+        <input
+          id="quote-name"
+          name="name"
+          type="text"
+          autoComplete="name"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+          placeholder="Seu nome"
+          required
+        />
+      </div>
+
+      <div className="quote-field">
+        <label htmlFor="quote-phone">Celular ou WhatsApp com DDD</label>
+        <input
+          id="quote-phone"
+          name="phone"
+          type="tel"
+          inputMode="numeric"
+          autoComplete="tel"
+          value={phone}
+          onChange={(event) => setPhone(formatBrazilianPhone(event.target.value))}
+          placeholder="(11) 99999-9999"
+          minLength={14}
+          maxLength={15}
+          aria-describedby="quote-phone-help"
+          required
+        />
+        <small id="quote-phone-help">Inclua o DDD para que possamos retornar o contato.</small>
+      </div>
+
+      <div className="quote-field">
+        <label htmlFor="quote-message">Mensagem</label>
+        <textarea
+          id="quote-message"
+          name="message"
+          rows={5}
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
+          placeholder="Descreva o serviço, o local e qualquer informação importante."
+          required
+        />
+      </div>
+
+      <button className="quote-submit" type="submit">
+        Enviar pelo WhatsApp <ArrowUpRight aria-hidden="true" />
+      </button>
+      <p className="quote-privacy">Ao enviar, sua mensagem será aberta diretamente no WhatsApp da Randaza.</p>
+      <p className="quote-status" role="status" aria-live="polite">{status}</p>
+    </form>
+  );
+}
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
