@@ -173,7 +173,7 @@ export function QuoteForm() {
   };
 
   return (
-    <form className="quote-form" onSubmit={handleSubmit} aria-labelledby="quote-form-title">
+    <form className="quote-form" id="formulario-orcamento" onSubmit={handleSubmit} aria-labelledby="quote-form-title">
       <div className="quote-form-head">
         <p>Solicite uma avaliação</p>
         <h3 id="quote-form-title">Conte brevemente o que você precisa.</h3>
@@ -256,7 +256,7 @@ export function SiteHeader() {
       <nav className="desktop-nav" aria-label="Navegação principal">
         <a href="#atuacao">Atuação</a><a href="#projetos">Projetos</a><a href="#metodo">Método</a><a href="#historia">História</a><a href="#contato">Contato</a>
       </nav>
-      <a className="header-cta" href="https://wa.me/5511973431618" target="_blank" rel="noreferrer">Solicite um orçamento</a>
+      <a className="header-cta" href="#formulario-orcamento">Solicite um orçamento</a>
       <button className="menu-toggle" type="button" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? 'Fechar menu' : 'Abrir menu'} onClick={() => setOpen(!open)}>
         <span /><span />
       </button>
